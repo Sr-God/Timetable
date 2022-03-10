@@ -1,0 +1,71 @@
+/* --------------- DO BIG CIRCLE --------------- */
+.rest {
+    top:47.1%;
+    left: 3.5%;
+    width: 420px;
+    height: 150px;
+    transform-origin: 100% 26px;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 1.1em;
+}
+.rest1{
+  transform: rotate(292deg);
+}
+.rest2{
+  transform: rotate(337deg);
+}
+.rest3{
+  transform: rotate(22deg);
+}
+.rest4{
+  transform: rotate(67deg);
+}
+.rest5{
+  transform: rotate(112deg);
+}
+.rest6{
+  transform: rotate(157deg);
+}
+.rest7{
+  transform: rotate(202deg);
+}
+.rest8{
+  transform: rotate(247deg);
+}
+/* --------------- CIRCLES --------------- */
+.contentRest {
+    left: 30px;
+    top: 20px;
+    width: 117px;
+    height: 100px;
+    position: relative;
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    transform: rotate(260deg);
+}
+/* --------------- INSERT CIRCLES --------------- */
+.contentRest::after{
+    content: 'Перемена';
+    position: absolute;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    right: 5px;
+    letter-spacing: 1.5px;
+    transform: rotate(180deg);
+    color:#8506A9;
+    font-weight: bold;
+}
+.rest3 .contentRest::after,
+.rest4 .contentRest::after,
+.rest5 .contentRest::after,
+.rest6 .contentRest::after{
+    transform: rotate(0);
+}
+/* --------------- INSERT CIRCLES TEXT --------------- */
+
+.rest8 .contentRest::after{
+    content: 'Отдых';
+    font-size: 1.2em;
+}

@@ -1,0 +1,105 @@
+/* --------------- DO BIG CIRCLE --------------- */
+.lesson {
+    top:47.1%;
+    left: 3.5%;
+    width: 420px;
+    height: 150px;
+    transform: rotate(0deg);
+    transform-origin: 100% 26px;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 1.1em;
+}
+.les1{
+  transform: rotate(270deg);
+}
+.les2{
+  transform: rotate(315deg);
+}
+.les3{
+  transform: rotate(360deg);
+}
+.les4{
+  transform: rotate(45deg);
+}
+.les5{
+  transform: rotate(90deg);
+}
+.les6{
+  transform: rotate(135deg);
+}
+.les7{
+  transform: rotate(180deg);
+}
+.les8{
+  transform: rotate(225deg);
+}
+/* --------------- CIRCLES --------------- */
+.contentLesson {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border-radius: 50%;
+}
+.les1 .contentLesson{
+  transform: rotate(-97deg);
+}
+.les2 .contentLesson{
+  transform: rotate(217deg);
+}
+.les3 .contentLesson{
+  transform: rotate(172deg);
+}
+.les4 .contentLesson{
+  transform: rotate(127deg);
+}
+.les5 .contentLesson{
+  transform: rotate(83deg);
+}
+.les6 .contentLesson{
+  transform: rotate(37deg);
+}
+.les7 .contentLesson{
+  transform: rotate(-8deg);
+}
+.les8 .contentLesson{
+  transform: rotate(307deg);
+}
+/* --------------- INSERT CIRCLES --------------- */
+.contentLesson::after{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    inset: 15px;
+    background-color: #4380D3;
+    display: grid;
+    place-items: center;
+    font-size: 1.8em;
+    transform: rotate(180deg);
+    font-weight: bold;
+}
+/* --------------- INSERT CIRCLE TEXT --------------- */
+.les1 .contentLesson::after{
+    content: 'Пара 1';
+}
+.les2 .contentLesson::after{
+    content: 'Пара 2';
+}
+.les3 .contentLesson::after{
+    content: 'Пара 3';
+}
+.les4 .contentLesson::after{
+    content: 'Пара 4';
+}
+.les5 .contentLesson::after{
+    content: 'Пара 5';
+}
+.les6 .contentLesson::after{
+    content: 'Пара 6';
+}
+.les7 .contentLesson::after{
+    content: 'Пара 7';
+}
+.les8 .contentLesson::after{
+    content: 'Пара 8';
+}
