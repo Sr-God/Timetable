@@ -57,6 +57,6 @@ main{
         text-align: center;
     }
     .clock__elem{
-        margin: 35px 0;
+        margin: 35px 20%;
     }
 }
